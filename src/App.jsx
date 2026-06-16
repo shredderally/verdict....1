@@ -39,8 +39,7 @@ const TOOLS = {
     { id:"fin_ratio",   name:"Financial Ratio Analyzer",tier:"ultra", prompt:(i)=>`Financial health analysis for: "${i}". Liquidity, profitability, efficiency, leverage ratios with benchmarks.` },
   ],
 };
-
-const PLAN_LIMITS = { free: 1, pro: 80, ultra: Infinity };
+const PLAN_LIMITS = { free: 1, pro: 80, ultra: unlimited };
 const PLAN_TOOLS  = { free: { creators: 5, business: 5 }, pro: { creators: 11, business: 10 }, ultra: { creators: 16, business: 16 } };
 const TIER_ORDER  = { free: 0, pro: 1, ultra: 2 };
 
@@ -686,7 +685,7 @@ CONFIDENCE: 81% viable. Strongest opportunity in anglophone West Africa.`},
         <div className="sec-lbl">Comparisons</div>
         <div className="sec-ttl">How we stack up.</div>
 
-        <p style={{fontSize:13,fontWeight:500,color:"var(--tx)",marginTop:32,marginBottom:12}}>Verdict vs VidIQ</p>
+        <p style={{fontSize:13,fontWeight:500,color:"var(--tx)",marginTop:32,marginBottom:12}}>Applo vs VidIQ</p>
         <table style={{width:"100%",borderCollapse:"collapse",fontSize:13,border:"1px solid var(--br)",borderRadius:"var(--rl)",overflow:"hidden"}}>
           <thead>
             <tr style={{background:"var(--sf)"}}>
@@ -703,7 +702,7 @@ CONFIDENCE: 81% viable. Strongest opportunity in anglophone West Africa.`},
               ["Works without extension","✗ Extension required","✓ Pure web app"],
               ["Mobile support","✗ Desktop only","✓ Full mobile"],
               ["Crypto payment","✗","✓ Binance Pay"],
-              ["Price","$49–$99/mo","$89/mo"],
+              ["Price","$49–$99/mo","$19/mo"],
             ].map(([f,v,vd],i)=>(
               <tr key={f} style={{background:i%2===0?"transparent":"rgba(255,255,255,.01)"}}>
                 <td style={{padding:"11px 16px",borderBottom:"1px solid var(--br)",borderRight:"1px solid var(--br)",color:"var(--tx)"}}>{f}</td>
@@ -714,7 +713,7 @@ CONFIDENCE: 81% viable. Strongest opportunity in anglophone West Africa.`},
           </tbody>
         </table>
 
-        <p style={{fontSize:13,fontWeight:500,color:"var(--tx)",marginTop:40,marginBottom:12}}>Verdict vs TubeBuddy</p>
+        <p style={{fontSize:13,fontWeight:500,color:"var(--tx)",marginTop:40,marginBottom:12}}>Applo vs TubeBuddy</p>
         <table style={{width:"100%",borderCollapse:"collapse",fontSize:13,border:"1px solid var(--br)",borderRadius:"var(--rl)",overflow:"hidden"}}>
           <thead>
             <tr style={{background:"var(--sf)"}}>
